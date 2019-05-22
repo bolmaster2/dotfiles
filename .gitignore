@@ -1,0 +1,31 @@
+# Mac OS X hidden files
+.DS_Store
+
+# Vim swap files
+.*.sw?
+
+# RVM and rbenv
+/.rvmrc
+/.rbenv-version
+
+# Bundler local files
+vendor/bundle
+
+# Node modules
+/node_modules
+
+# SASS cache
+.sass-cache
+
+# Bower components
+/bower_components
+
+# ENV files
+.env
+.env.development
+.env.staging
+.env.production
+.env.test
+
+# VS code
+.vscode/

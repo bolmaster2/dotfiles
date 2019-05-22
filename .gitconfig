@@ -1,0 +1,27 @@
+[alias]
+  s = status
+  co = checkout
+  ci = commit
+  l = log
+  b = branch
+  wip = commit -am "wip"
+[color]
+  ui = true
+[url "https://github"]
+  insteadOf = git://github
+[core]
+  excludesfile = /Users/joel/.gitignore
+[user]
+  name = Joel Larsson
+  email = joellarsson@sent.at
+	signingkey = 12E2955C043163BF
+[push]
+  default = simple
+[credential]
+  helper = cache
+[pull]
+  rebase = true
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/local/bin/gpg2
