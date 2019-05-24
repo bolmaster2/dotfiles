@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo -n 'Running .bash_profile... '
 
 ## ALIASES
@@ -13,7 +15,7 @@ function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-RED="\[\033[0;31m\]"
+# RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
@@ -52,9 +54,6 @@ eval "$(rbenv init -)"
 
 export PATH="/usr/local/sbin:$PATH"
 
-# TODO: Check if needed and by whom?
-#export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
-
 # Curl ftw
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
@@ -68,7 +67,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Cointains `pip` version 3 but not the `python` binary
 # export PATH="$HOME/Library/Python/3.6/bin/:$PATH"
 
-# What is cargo?
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # My own bins, first! 😎
