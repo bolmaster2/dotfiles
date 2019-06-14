@@ -50,6 +50,9 @@ echo '💥'
 # rbenv init
 eval "$(rbenv init -)"
 
+## GOlang
+export GOPATH=$HOME/go
+
 ## PATH MODIFICATIONS 🧐
 
 export PATH="/usr/local/sbin:$PATH"
