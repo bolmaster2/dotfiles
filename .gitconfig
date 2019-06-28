@@ -10,7 +10,7 @@
 [url "https://github"]
   insteadOf = git://github
 [core]
-  excludesfile = /Users/joel/.gitignore
+	excludesfile = ~/.gitignore
 [user]
   name = Joel Larsson
   email = joellarsson@sent.at
@@ -24,4 +24,4 @@
 [commit]
   gpgsign = true
 [gpg]
-  program = /usr/local/bin/gpg2
+  program = /usr/local/bin/gpg
