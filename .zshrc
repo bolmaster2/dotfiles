@@ -1,6 +1,8 @@
 echo -n 'Running .zshrc... '
 
-# Load `~/.profile`
+# Load `~/.profile
+# Put all "cross-shell" commands in `.profile`. Like path modifications, alias etc
+# which works in other shells like `sh`, `bash` etc
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 # Path to your oh-my-zsh installation.

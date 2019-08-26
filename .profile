@@ -21,8 +21,6 @@ export LANG="en_US.UTF-8"
 # Load NVM
 # NOTE: This is slow 😬
 echo -n 'Waiting for nvm.sh... '
-export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 echo '💥'
@@ -32,15 +30,15 @@ echo '💥'
 # rbenv init
 eval "$(rbenv init -)"
 
-## GOlang
+## Golang
 export GOPATH=$HOME/go
 
 ## PATH MODIFICATIONS 🧐
 
 export PATH="/usr/local/sbin:$PATH"
 
-# Curl ftw
-export PATH="/usr/local/opt/curl/bin:$PATH"
+# Curl from homebrew
+# export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # Global node modules
 export PATH="$HOME/node_modules/.bin:$PATH"
@@ -54,8 +52,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# OpenSSL > macos modified one
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+# OpenSSL 1.1.1 from homebrew
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
 # My own bins, first! 😎
 export PATH="$HOME/bin:$PATH"
