@@ -16,4 +16,5 @@ ln -s "$DOTFILES_DIR/.bash_profile" "$HOME/.bash_profile"
 ln -s "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/.gitignore" "$HOME/.gitignore"
 ln -s "$DOTFILES_DIR/.eslintrc.js" "$HOME/.eslintrc.js"
+ln -s "$DOTFILES_DIR/gpg.conf" "$HOME/.gnupg/gpg.conf"
 ```
