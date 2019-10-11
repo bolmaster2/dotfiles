@@ -34,8 +34,15 @@ eval "$(rbenv init -)"
 export GOPATH=$HOME/go
 
 # Date helper function
+# Usage:
+# ```
+# now
+# // Show as UTC
+# now -u
+# ```
+#
 function now {
-  date +"%Y-%m-%d %T"
+  date $1 +"%Y-%m-%d %T"
 }
 
 ## PATH MODIFICATIONS 🧐
