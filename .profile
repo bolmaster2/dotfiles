@@ -9,29 +9,26 @@ alias lsort="echo -n '// Sorted on latest modified (add -RW for recursive or -f 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-## LOADING
-# (`-s` is checking if file exists), check: http://mywiki.wooledge.org/BashGuide/TestsAndConditionals#line-257
-
 # Set terminal language, check: https://stackoverflow.com/questions/11540815/how-to-change-the-language-of-my-git
 export LANG="en_US.UTF-8"
 
+## LOADING
+# (`-s` is checking if file exists), check: http://mywiki.wooledge.org/BashGuide/TestsAndConditionals#line-257
+
 # git tab completion
-[ -s ~/.git-completion.bash ] && source ~/.git-completion.bash
+[ -s "~/.git-completion.bash" ] && source "~/.git-completion.bash"
 
 # Load NVM
 # NOTE: This is slow 😬
-echo -n 'Waiting for nvm.sh... '
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-echo '💥'
-# Load AVN, which changes node version when changing dir: https://github.com/wbyoung/avn
-# [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
+# echo -n 'Waiting for nvm.sh... '
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh" --no-use
+# echo 'nvm.sh done 💥'
 
 # rbenv init
 eval "$(rbenv init -)"
 
 ## Golang
-export GOPATH=$HOME/go
+export GOPATH="$HOME/go"
 
 # Date helper function
 # Usage:
