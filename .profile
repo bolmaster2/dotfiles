@@ -25,6 +25,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh" --no-use
 # echo 'nvm.sh done 💥'
 
+# YMV (Yarn version manager :facepalm:)
+export YVM_DIR=/usr/local/opt/yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+
 # rbenv init
 eval "$(rbenv init -)"
 
