@@ -21,6 +21,7 @@ export LANG="en_US.UTF-8"
 # Load NVM
 # NOTE: This is slow 😬
 # echo -n 'Waiting for nvm.sh... '
+export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh" --no-use
 # echo 'nvm.sh done 💥'
 
@@ -67,3 +68,6 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
 # My own bins, first! 😎
 export PATH="$HOME/bin:$PATH"
+
+# homebrew bin first!
+export PATH="/usr/local/bin:$PATH"
