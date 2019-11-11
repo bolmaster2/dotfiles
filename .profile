@@ -32,8 +32,9 @@ export YVM_DIR=/usr/local/opt/yvm
 # rbenv init
 eval "$(rbenv init -)"
 
-## Golang
+# Golang
 export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 
 # Date helper function
 # Usage:
@@ -45,6 +46,13 @@ export GOPATH="$HOME/go"
 #
 function now {
   date $1 +"%Y-%m-%d %T"
+}
+
+# Export .env file
+function exportenv {
+  export $(cat .env)
+  echo "Exported:"
+  cat ".env"
 }
 
 ## PATH MODIFICATIONS 🧐
@@ -62,16 +70,16 @@ export PATH="$HOME/node_modules/.bin:$PATH"
 # BEWARE: those will come before npm's node_modules in `./node_modules/.` :point_up:
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# Cointains `pip` version 3 but not the `python` binary
-# export PATH="$HOME/Library/Python/3.6/bin/:$PATH"
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # OpenSSL 1.1.1 from homebrew
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
+# Homebrew bins!
+export PATH="/usr/local/bin:$PATH"
+
 # My own bins, first! 😎
 export PATH="$HOME/bin:$PATH"
 
-# homebrew bin first!
-export PATH="/usr/local/bin:$PATH"
+# Run temporary stuff
+[ -s "$HOME/.temprc" ] && source "$HOME/.temprc"
