@@ -17,4 +17,6 @@ ln -s "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/.gitignore" "$HOME/.gitignore"
 ln -s "$DOTFILES_DIR/.eslintrc.js" "$HOME/.eslintrc.js"
 ln -s "$DOTFILES_DIR/gpg.conf" "$HOME/.gnupg/gpg.conf"
+ln -s "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
+ln -s "$DOTFILES_DIR/.temprc" "$HOME/.temprc"
 ```

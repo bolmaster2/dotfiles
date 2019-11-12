@@ -7,8 +7,6 @@
   wip = commit -am "wip"
 [color]
   ui = true
-[url "https://github"]
-  insteadOf = git://github
 [core]
 	excludesfile = ~/.gitignore
 [user]
