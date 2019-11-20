@@ -127,4 +127,4 @@ load-nvmrc
 
 echo "Booting shell done ✅"
 echo "🦜"
-echo "...and don't forget to smile once in a while 😅"
+echo "...and remember to not take yourself too seriously 🧸"
