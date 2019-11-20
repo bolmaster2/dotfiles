@@ -125,4 +125,6 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-echo -n "Done!"
+echo "Booting shell done ✅"
+echo "🦜"
+echo "...and don't forget to smile once in a while 😅"
