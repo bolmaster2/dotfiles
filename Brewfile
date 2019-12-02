@@ -24,6 +24,7 @@ brew "postgresql"
 brew "python@2"
 brew "rbenv"
 brew "redis", restart_service: true
+brew "siege"
 brew "step"
 brew "telnet"
 brew "w3m"
