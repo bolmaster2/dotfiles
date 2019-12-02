@@ -1,0 +1,5 @@
+# Running temporary things from `.profile`
+
+echo "Running .temprc..."
+
+# Add temporary stuff below... 🦙
