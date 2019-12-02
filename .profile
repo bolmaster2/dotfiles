@@ -3,7 +3,9 @@ alias be="bundle exec "
 alias gut="git"
 alias gti="git"
 alias ll="ls -lha"
-alias lsort="echo -n '// Sorted on latest modified (add -RW for recursive or -f to unsort): ' && pwd && ls -lhatTF"
+alias lsort="echo -n '// Sorted on last modified (use -f to unsort)\n' && ls -lhatTF"
+# Run in the branch you want to rebase
+alias rebasemaster="git fetch origin master && git rebase origin/master"
 
 # Sets color on the terminal
 export CLICOLOR=1
