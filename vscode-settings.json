@@ -2,40 +2,49 @@
   "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
+  "editor.detectIndentation": true,
   "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "selection",
   "editor.scrollBeyondLastLine": false,
   "editor.cursorBlinking": "solid",
   "editor.formatOnSave": false,
-  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [80,120],
+  "editor.renderControlCharacters": false,
+  "editor.suggestSelection": "first",
   "workbench.colorTheme": "Solarized Dark",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.settings.editor": "json",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#073642"
+  },
   "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
-  "workbench.activityBar.visible": false,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.watcherExclude": {
+    "vendor/**": true
+  },
   "ruby.useBundler": true,
-  // "solargraph.useBundler": true,
-  // "solargraph.diagnostics": true,
-  //"workbench.panel.defaultLocation": "right"
   "ruby.lint": {
     "rubocop": true,
     "ruby": true //Runs ruby -wc
   },
   "ruby.intellisense": "rubyLocate",
   "workbench.statusBar.feedback.visible": false,
-  "editor.renderControlCharacters": false,
   "search.exclude": {
     "vendor/": true
   },
   "breadcrumbs.enabled": true,
-  "files.watcherExclude": {
-    "vendor/**": true
-  },
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.settings.editor": "json",
-  "workbench.settings.enableNaturalLanguageSearch": false,
   "explorer.openEditors.visible": 0,
   "search.showLineNumbers": true,
   "todohighlight.defaultStyle": {
@@ -56,17 +65,32 @@
       "overviewRulerColor": "#cb4b16"
     }
   ],
-  "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "timing.insertConvertedTime": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "go.formatTool": "goimports",
+  // "go.useLanguageServer": true,
+  "go.lintOnSave": "file",
+  "go.lintTool":"golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
+  "gitlens.hovers.enabled": false,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [".html", ".js", ".jsx", ".ts"]
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "python.jediEnabled": false,
+  "terminal.integrated.fontSize": 16
 }
