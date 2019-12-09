@@ -14,7 +14,7 @@
   email = joellarsson@sent.at
 	signingkey = 12E2955C043163BF
 [push]
-  default = simple
+	default = upstream
 [credential]
   helper = cache
 [pull]
