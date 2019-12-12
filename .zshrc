@@ -126,5 +126,8 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 echo "Booting shell done ✅"
-echo "🦜"
-echo "...and remember to not take yourself too seriously 🧸"
+EMOJIS="🦉🐒🐢🦧🦍🐅🐆🦓🐘🦛🦏🐪🐫🦒🦘🐃🐂🐄🐎🐖🐏🐑🦙🐐🦌🐩🐈🐓🦃🦚🦜🦢🦩🕊🐇🦝🦨🦡🦦🦥🐿🦔🐉🐲"
+read EMOJIS_ARRAY <<< $EMOJIS
+rand=$[$RANDOM % ${#EMOJIS_ARRAY[@]}]
+echo ${EMOJIS_ARRAY[$rand]}
+echo "...and remember to not take yourself too seriously 🦦"
