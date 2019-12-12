@@ -77,6 +77,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # OpenSSL 1.1.1 from homebrew
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
+# Java from homebrew
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export JDK_HOME="/usr/local/opt/openjdk"
+
 # Homebrew bins!
 export PATH="/usr/local/bin:$PATH"
 

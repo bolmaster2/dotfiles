@@ -71,6 +71,7 @@
   // "[javascript]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
   // },
+  "maven.executable.path": "/usr/local/bin/mvn",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "timing.insertConvertedTime": true,
