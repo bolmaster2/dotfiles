@@ -128,6 +128,6 @@ load-nvmrc
 echo "Booting shell done ✅"
 EMOJIS="🦉🐒🐢🦧🦍🐅🐆🦓🐘🦛🦏🐪🐫🦒🦘🐃🐂🐄🐎🐖🐏🐑🦙🐐🦌🐩🐈🐓🦃🦚🦜🦢🦩🕊🐇🦝🦨🦡🦦🦥🐿🦔🐉🐲"
 read EMOJIS_ARRAY <<< $EMOJIS
-rand=$[$RANDOM % ${#EMOJIS_ARRAY[@]}]
+rand=$[$RANDOM % ${#EMOJIS_ARRAY[@]}-1]
 echo ${EMOJIS_ARRAY[$rand]}
-echo "...and remember to not take yourself too seriously 🦦"
+echo "... remember to not take this computer too seriously 🦦"
