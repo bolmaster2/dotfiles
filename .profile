@@ -63,7 +63,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Curl from homebrew
 # export PATH="/usr/local/opt/curl/bin:$PATH"
-export PATH="/usr/local/opt/curl-openssl@1.1/bin:$PATH"
+export PATH="/usr/local/opt/curl-openssl/bin/:$PATH"
 
 # Global node modules
 export PATH="$HOME/node_modules/.bin:$PATH"
