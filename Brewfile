@@ -1,4 +1,3 @@
-tap "bolmaster2/curl-openssl"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
