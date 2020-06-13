@@ -21,6 +21,7 @@ brew "hugo"
 brew "ipfs"
 brew "jq"
 brew "librdkafka"
+brew "mas"
 brew "openjdk"
 brew "maven"
 brew "mitmproxy"
@@ -54,3 +55,18 @@ cask "ngrok"
 cask "the-unarchiver"
 cask "webtorrent"
 cask "wireshark"
+mas "Drafts", id: 1435957248
+mas "GarageBand", id: 682658836
+mas "iA Writer", id: 775737590
+mas "iMovie", id: 408981434
+mas "Jira", id: 1475897096
+mas "Keynote", id: 409183694
+mas "NextDNS", id: 1464122853
+mas "NordVPN IKE", id: 1116599239
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Slack", id: 803453959
+mas "Tailscale", id: 1475387142
+mas "Wire", id: 931134707
+mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
