@@ -9,8 +9,8 @@
   "editor.renderWhitespace": "selection",
   "editor.scrollBeyondLastLine": false,
   "editor.cursorBlinking": "solid",
-  "editor.formatOnSave": false,
-  "editor.rulers": [80,120],
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 120],
   "editor.renderControlCharacters": false,
   "editor.suggestSelection": "first",
   "workbench.colorTheme": "Solarized Dark",
@@ -68,9 +68,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  // "[javascript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
   "maven.executable.path": "/usr/local/bin/mvn",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -81,10 +78,8 @@
   "go.formatTool": "goimports",
   // "go.useLanguageServer": true,
   "go.lintOnSave": "file",
-  "go.lintTool":"golangci-lint",
-  "go.lintFlags": [
-    "--fast"
-  ],
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
   "gitlens.hovers.enabled": false,
   "eslint.enable": true,
   "eslint.autoFixOnSave": false,
@@ -92,6 +87,29 @@
   "eslint.options": {
     "extensions": [".html", ".js", ".jsx", ".ts"]
   },
+  "javascript.suggestionActions.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
   "python.jediEnabled": false,
-  "terminal.integrated.fontSize": 16
+  "terminal.integrated.fontSize": 16,
+  "plantuml.server": "http://plantuml.com/plantuml",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
