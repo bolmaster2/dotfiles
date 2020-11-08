@@ -125,6 +125,13 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+# Homebrew shell completions, see: https://docs.brew.sh/Shell-Completion
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+  autoload -Uz compinit
+  compinit
+fi
+
 echo "Booting shell done ✅"
 EMOJIS="🦉🐒🐢🦧🦍🐅🐆🦓🐘🦛🦏🐪🐫🦒🦘🐃🐂🐄🐎🐖🐏🐑🦙🐐🦌🐩🐈🐓🦃🦚🦜🦢🦩🕊🐇🦝🦨🦡🦦🦥🐿🦔🐉🐲"
 read EMOJIS_ARRAY <<< $EMOJIS
