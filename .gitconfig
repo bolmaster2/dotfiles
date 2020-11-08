@@ -11,8 +11,8 @@
 	excludesfile = ~/.gitignore
 [user]
 	name = Joel Larsson
-	email = joellarsson@sent.at
-	signingkey = 12E2955C043163BF
+	email = joel@tugga.nu
+	signingkey = 7298A96FEEA94519
 [push]
 	default = upstream
 [credential]
