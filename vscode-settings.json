@@ -23,6 +23,9 @@
     "editorRuler.foreground": "#073642"
   },
   "window.zoomLevel": 0,
+  "files.associations": {
+    ".env*": "shellscript"
+  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
