@@ -96,6 +96,9 @@
   "python.jediEnabled": false,
   "terminal.integrated.fontSize": 16,
   "plantuml.server": "http://plantuml.com/plantuml",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
