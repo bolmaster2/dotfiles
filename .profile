@@ -81,6 +81,9 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export JDK_HOME="/usr/local/opt/openjdk"
 
+# Git from homebrew
+export PATH="/usr/local/opt/git/bin:$PATH"
+
 # Homebrew bins!
 export PATH="/usr/local/bin:$PATH"
 
