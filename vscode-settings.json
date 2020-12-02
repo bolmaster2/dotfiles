@@ -117,5 +117,8 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.schemas": {
+    "file:///toc.schema.json": "/toc\\.yml/i"
   }
 }
