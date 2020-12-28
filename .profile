@@ -1,11 +1,5 @@
 ## ALIASES
-alias be="bundle exec "
-alias gut="git"
-alias gti="git"
-alias ll="ls -lha"
-alias lsort="echo -n '// Sorted on last modified (use -f to unsort)\n' && ls -lhatTF"
-# Run in the branch you want to rebase
-alias rebasemaster="git fetch origin master && git rebase origin/master"
+source .aliases
 
 # Sets color on the terminal
 export CLICOLOR=1
@@ -58,37 +52,7 @@ function exportenv {
 }
 
 ## PATH MODIFICATIONS 🧐
-
-export PATH="/usr/local/sbin:$PATH"
-
-# Curl from homebrew
-# export PATH="/usr/local/opt/curl/bin:$PATH"
-export PATH="/usr/local/opt/curl-openssl/bin/:$PATH"
-
-# Global node modules
-export PATH="$HOME/node_modules/.bin:$PATH"
-
-# Global yarn and global yarn modules,
-# BEWARE: those will come before npm's node_modules in `./node_modules/.` :point_up:
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# OpenSSL 1.1.1 from homebrew
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-
-# Java from homebrew
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export JDK_HOME="/usr/local/opt/openjdk"
-
-# Git from homebrew
-export PATH="/usr/local/opt/git/bin:$PATH"
-
-# Homebrew bins!
-export PATH="/usr/local/bin:$PATH"
-
-# My own bins, first! 😎
-export PATH="$HOME/bin:$PATH"
+source .path
 
 # Run temporary stuff
 [ -s "$HOME/.temprc" ] && source "$HOME/.temprc"
