@@ -71,6 +71,7 @@ cask "java"
 cask "keka"
 cask "keybase"
 cask "ngrok"
+cask "protonvpn"
 cask "the-unarchiver"
 cask "webtorrent"
 cask "wireshark"
@@ -84,6 +85,7 @@ mas "NextDNS", id: 1464122853
 mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "RDM - GUI for Redis®", id: 1475905948
 mas "Slack", id: 803453959
 mas "Tailscale", id: 1475387142
 mas "WireGuard", id: 1451685025
