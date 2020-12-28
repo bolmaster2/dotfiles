@@ -1,0 +1,19 @@
+# Date helper function
+# Usage:
+# ```
+# now
+# // Show as UTC
+# now -u
+# ```
+#
+function now {
+  date $1 +"%Y-%m-%d %T"
+}
+
+# Export .env file as environment variables
+function exportenv {
+  [ -s ".env" ] || return 1;
+  export $(cat .env)
+  echo "Exported variables:"
+  cat ".env"
+}

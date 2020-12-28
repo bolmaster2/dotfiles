@@ -1,5 +1,5 @@
 ## ALIASES
-source .aliases
+source "$HOME/.aliases"
 
 # Sets color on the terminal
 export CLICOLOR=1
@@ -28,27 +28,11 @@ eval "$(rbenv init -)"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
-# Date helper function
-# Usage:
-# ```
-# now
-# // Show as UTC
-# now -u
-# ```
-#
-function now {
-  date $1 +"%Y-%m-%d %T"
-}
-
-# Export .env file
-function exportenv {
-  export $(cat .env)
-  echo "Exported:"
-  cat ".env"
-}
-
 ## PATH MODIFICATIONS 🧐
-source .path
+source "$HOME/.path"
+
+# Helper functions
+source "$HOME/.functions"
 
 # Run temporary stuff
 [ -s "$HOME/.temprc" ] && source "$HOME/.temprc"
