@@ -120,5 +120,8 @@
   },
   "yaml.schemas": {
     "file:///toc.schema.json": "/toc\\.yml/i"
+  },
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
   }
 }
