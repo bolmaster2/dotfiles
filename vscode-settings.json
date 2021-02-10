@@ -11,7 +11,7 @@
   "editor.cursorBlinking": "solid",
   "editor.formatOnSave": true,
   "editor.rulers": [80, 120],
-  "editor.renderControlCharacters": false,
+  "editor.renderControlCharacters": true,
   "editor.suggestSelection": "first",
   "workbench.colorTheme": "Solarized Dark",
   "workbench.activityBar.visible": false,
@@ -123,5 +123,15 @@
   },
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
-  }
+  },
+  "aws.profile": "profile:docker",
+  "aws.telemetry": false,
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ]
 }
