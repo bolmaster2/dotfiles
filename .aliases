@@ -5,3 +5,9 @@ alias gti="git"
 alias lsort="echo -n '// Sorted on last modified (use -f to unsort)\n' && ls -lhatTF"
 # Run in the branch you want to rebase
 alias rebasemaster="git fetch origin master && git rebase origin/master"
+
+# Unix `tree` command with default param of . (current dir)
+function tree() {
+  w=${1:-.}
+  find $w -print | sort | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+}
