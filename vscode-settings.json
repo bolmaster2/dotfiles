@@ -22,7 +22,6 @@
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#073642"
   },
-  "window.zoomLevel": 0,
   "files.associations": {
     ".env*": "shellscript"
   },
